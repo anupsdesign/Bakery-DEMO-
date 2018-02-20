@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">  
+    <title>Home</title>  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style2.css">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">  
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="navActivity.js"></script> 
+    <script src="parallax.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>  
+    
+    <link rel="stylesheet" type="text/css" href="lightbox.min.css">
+    <script type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>  
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $(".button").click(function(){
+                var value = $(this).attr("data-filter");
+                if(value == "all"){
+                    $(".filter").show();
+                }
+                else{
+                    $(".filter").not("."+ value).hide();
+                    $(".filter").filter("." + value).show();
+                }
+                $("ul .button").click(function(){
+                    $(this).addClass("active").siblings().removeClass('active');
+                })
+            })
+      })
+    </script>  
+  </head>
+  <body>
+        
+      <section id="home">
+        <nav>
+            
+            <a href="index.html" class="logo-link"><div class="logo"></div></a>
+              
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle">
+              
+            <div class="menu">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="gallery.html">Gallery</a>  
+            <a href="contact.html">Contact</a>
+            </div>      
+          </nav>
+        <div id="note">
+        <h1>Stop by for our Valentine's day sepcial event on Wednesday, February 14 ! <span><a href="#subscribe">Subscribe</a></span> to our newsletter so you don't miss out.</h1>
+        </div>  
+        <div class="landing" data-parallax="scroll" data-image-src="images/bakery.jpg">
+            <div class="overlay"></div>
+            <h1>Welcome</h1>
+            <div class="down-arrow"></div>
+            <a href="#middle" class="arrow"><h6>&#10144;</h6></a>
+        </div>  
+          
+        <div class="about-info" id="middle" data-parallax="scroll" data-image-src="images/cafe.jpg">
+            <h1>Our Story</h1>
+            <div class="grid-container">
+            <div class="center-grid">
+                <div class="left-container">
+                <p>
+                Sweet Bakery is an upscale Artisan Bakery &amp; Cafe located at Lower East Side Manhattan that will take your bakery experience to the next level. <br> 
+                The bakery began as a small storefront in the Upper East Side. It was borne out of a desire to serve local immigrant community members and focused on the high quality rye, black and grain breads that reflected the traditions of their homeland. <br>   
+                <button type="button">Read more</button>
+                <br>    
+                </p> 
+                </div>
+                <div class="right-container">
+                    
+                </div>
+            </div>
+
+        </div>
+        </div>
+          
+        <div class="location-info">
+            <h1>Visit us</h1>
+        <div class="grid-container">
+          
+            <div class="center-grid">
+                <div class="left-container">
+                    <div class="left">
+                  <div class="info-wrap">
+                    <li>We are located at <a href="#">123 Fake Street, New York, NY 12345</a></li>
+                    <li>Call us at <a href="tel:321-456-7890">&#40;321&#41;&#45;456&#45;7890</a></li>
+                    <li>Send us an email at <a href="#">placeholder@example.com</a>
+                    <br>
+                    <a href="contact.html"><button type="button">Contact Us</button></a>
+                  </div>
+              </div>
+                </div>
+                <div class="right-container">
+                    <div class="right" on contextmenu="return false;" onselectstart="return false;" ondragstart="return false;">
+
+                <div id="demo" class="carousel slide" data-ride="carousel" data-interval="3000">
+
+                  <!-- Indicators -->
+                  <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                  </ul>
+
+                  <!-- The slideshow -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./images/beautiful.jpg" alt="Image 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/croisant.jpg" alt="Image 2">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/desserts.jpg" alt="Image 3">
+                    </div>
+                  </div>
+
+                  <!-- Left and right controls -->
+                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+
+                </div>              
+
+              </div>
+                </div>
+            </div>
+
+        </div>
+        </div> 
+          
+        <div class="newsletter">
+          <div class="signup-form">
+                        <h3>Subscribe to our newsletter</h3>
+                        <form>
+                            <input id="subscribe" type="email" placeholder="Your Email" required><button type="submit">Sign Up</button>
+                        </form>
+                    </div>
+        </div>
+          
+        <div class="bottom-container">
+        <div class="social-icons">
+        <h6>Follow us on</h6>
+        <ul>
+            <li><a href="#" class="" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"class="" title="Facebook"><i class="fab fa-facebook-f"></i></a>  </li>
+            <li><a href="#"class="" title="Yelp"><i class="fab fa-yelp"></i></a></li>
+            <li><a href="#"class="" title="Foursquare"><i class="fab fa-foursquare"></i></a></li>
+        </ul>
+        </div>
+        <footer>
+        <p> 
+            &copy; Sweet Bakery New York 2018 &#8226; All rights reserved &#8226; Designed by <a href="#" alt="AnupsDesign" title="http://anupsdesign.github.io/"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></a>
+        </p>  
+    </footer>
+    </div>  
+          
+      </section>
+        
+      <script>
+        $('a > img').bind('contextmenu', function(e){
+            return false;
+        }); 
+      </script>  
+      <script>
+        document.oncontextmenu = function(e){
+            var target = (typeof e !="undefined")? e.target: event.srcElement
+                if (target.tagName == "IMG" || (target.tagName == 'A' && target.firstChild.tagName == 'IMG'))
+                    return false
+        }
+      </script> 
+      
+  </body>
+</html>

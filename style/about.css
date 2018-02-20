@@ -1,0 +1,337 @@
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Voltaire');
+@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');
+
+nav{
+    position: relative;
+}
+.about-banner{
+    width: 90%;
+    margin: 0 auto;
+    height: 60vh;
+    position: relative;
+}
+.overlay{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.45);
+}
+h2.heading{
+    color: #dfdfdf;
+    font-size: 3em;
+    margin: 0;
+    font-family: 'Cinzel Decorative', cursive;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);;
+    width: 100%;
+}
+.about-container{
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    height: auto
+}
+.about-desc{
+    position: relative;
+    border: 3px solid #ABA72D;
+    border-radius: 20px;
+    width: 50%;
+    height: auto;
+    margin: 5vh auto;
+    -webkit-box-shadow: 0px 11px 20px -4px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 11px 20px -4px rgba(0,0,0,0.1);
+    box-shadow: 0px 11px 20px -4px rgba(0,0,0,0.1); 
+}
+.about-desc h1{
+    position: relative;
+    text-align: center;
+    margin: 0;
+    font-size: 2em;
+    font-family: 'Voltaire', sans-serif;
+    text-transform: uppercase;
+    padding: 15px;
+}
+.about-desc h2{
+    position: relative;
+    text-align: center;
+    margin: 0;
+    font-size: 2em;
+    font-family: 'Dancing Script', cursive;
+    padding: 15px;
+}
+.about-desc p{
+    text-align: center;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 1.3em;
+    position: relative;
+    padding: 15px;
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+.time-table{
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    position: relative;
+}
+.time-table h3{
+    font-size: 2em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Voltaire', sans-serif;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+}
+.time-table ul{
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-bottom: 20px;
+}
+.time-table ul li{
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 1.3em;
+    text-align: left;
+    list-style: none;
+    padding: 5px;
+    text-transform: uppercase;
+}
+.time-table ul li span{
+    float: right;
+}
+.signup-form{
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    height: auto;
+    position: relative;
+}
+.signup-form form{
+    padding: 15px;
+}
+.signup-form input{
+    width: 40%;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+.signup-form button{
+    width: 40%;
+    outline: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition:.4s;
+    background-color: transparent;
+}
+.signup-form button:hover{
+    background-color: #121212;
+    color: #ABA72D;
+    -webkit-box-shadow:0 0 5px #121212;
+    -moz-box-shadow:0 0 5px #121212;
+    box-shadow:0 0 5px #121212;
+}
+.signup-form input:focus{
+    background-color: #121212;
+    color: #ABA72D;
+    -webkit-box-shadow:0 0 5px #121212;
+    -moz-box-shadow:0 0 5px #121212;
+    box-shadow:0 0 5px #121212;
+}
+.signup-form {
+    padding-bottom: 20px;
+}
+.signup-form h3{
+    font-size: 2em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Voltaire', sans-serif;
+    text-align-last: center;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.bottom-container{
+    height: auto;
+    position: relative;
+    top: 0%;
+}
+.social-icons h6{
+    font-family: 'Voltaire', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+.social-icons ul{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 0;
+    position: relative;
+    text-align: center;
+}
+.social-icons ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+}
+.social-icons ul li a{
+    font-size: 1.5em;
+    color: #121212;
+}
+.social-icons ul li a:hover{color: #ABA72D;}
+footer{
+    position: relative;
+    width: 100%;
+    margin: 0vh auto;
+    margin-bottom: 0;
+    /*background-color: darksalmon;*/
+}
+
+@media only screen and (max-width: 860px){
+    .about-banner{
+    width: 90%;
+    margin: 0 auto;
+    height: 60vh;
+    position: relative;
+    background-color: rgba(0,0,0,.5);
+}
+}
+
+@media only screen and (min-width: 1020px) and (max-width: 1030px){
+    .time-table h3{
+    font-size: 1.4em;   
+}
+    .signup-form h3{
+    font-size: 1.4em;   
+}
+}
+
+@media only screen and (max-width: 800px) and (max-width: 815px){
+    .about-desc{
+    width: 90%;
+}
+}
+
+@media only screen and (min-width: 750px) and (max-width: 770px){
+    .about-desc{
+    width: 90%;
+}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 740px){
+    .about-desc{
+    width: 90%;
+}
+}
+
+@media only screen and (min-width: 400px) and (max-width: 415px){
+    
+    .about-desc{
+    width: 90%;
+}
+    footer p{
+            text-align: center;
+            position: relative;
+            font-size: .8em;
+            margin-bottom: 0;
+    }
+    .time-table{
+    width: 100%;
+}
+    .time-table ul li{
+    font-size: 1em;
+}
+    .time-table h3{
+    font-size: 1.2em;   
+}
+    .signup-form h3{
+    font-size: 1.2em;   
+}
+    .signup-form{
+    width: 90%;
+    margin: 0 auto;
+}
+    .signup-form form{
+        padding: 15px;
+}
+    .signup-form input{
+        width: 40%;
+        outline: none;
+        border: none;
+        padding: 10px;
+}
+    .signup-form button{
+        width: 40%;
+        outline: none;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        transition:.4s;
+        background-color: transparent;
+}
+}
+
+@media only screen and (min-width: 360px) and (max-width: 375px){
+    .about-desc{
+    width: 90%;
+}
+    footer p{
+            text-align: center;
+            position: relative;
+            font-size: .7em;
+            margin-bottom: 0;
+    }
+    .time-table{
+    width: 100%;
+}
+    .time-table ul li{
+    font-size: 1em;
+}
+    .time-table h3{
+    font-size: 1.2em;   
+}
+    .signup-form h3{
+    font-size: 1.2em;   
+}
+    .signup-form{
+    width: 90%;
+    margin: 0 auto;
+}
+    .signup-form form{
+        padding: 15px;
+}
+    .signup-form input{
+        width: 40%;
+        outline: none;
+        border: none;
+        padding: 10px;
+}
+    .signup-form button{
+        width: 40%;
+        outline: none;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        transition:.4s;
+        background-color: transparent;
+}
+}

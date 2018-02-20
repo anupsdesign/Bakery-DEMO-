@@ -1,0 +1,402 @@
+@import url(style.css);
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Voltaire');
+#gallery h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
+    color: #dfdfdf;
+    font-size: 3em;
+    z-index: 1;
+    width: 100%;
+    margin: 0;
+}
+nav{
+    position: relative;
+} 
+     
+.grid-container{
+    height: auto;
+    max-width: 1150px;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+    position: relative;
+    top: 5vh;
+}
+.center-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(500px,2fr));
+    justify-items: center;
+    grid-row-gap: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.left-container{
+    width: 100%;
+    height: 450px;
+    /*background-color: cornflowerblue*/
+}
+.right-container{
+    width: 100%;
+    height: 450px;
+    /*background-color: peachpuff;*/
+}
+.bottom-container{
+    position: relative;
+    margin: 0vh auto;
+    width: 100%;
+    height: auto;
+    /*background-color: lightblue;*/
+}
+
+.social-icons{
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+}
+.social-icons h6{
+    font-family: 'Voltaire', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 10px;
+}
+.social-icons ul{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 0;
+    position: relative;
+}
+.social-icons ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+}
+.social-icons ul li a{
+    font-size: 1.5em;
+    color: #121212;
+}
+.social-icons ul li a:hover{color: #ABA72D;}
+
+.contact-desc{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 100%;
+    padding-top: 30px;
+}
+.contact-desc h1{
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding: 15px;
+    font-family: 'Cinzel Decorative', cursive;
+    text-transform: lowercase;
+}
+.contact-desc h6{
+    padding: 10px;
+    margin-bottom: 0;
+}
+h6 a{
+    color: inherit;
+}
+h6 span{
+    display: none;
+    opacity: 0;
+    transition: .4s;
+}
+h6 a, h6 a:hover{
+    text-decoration: none;
+    padding: 5px;
+}
+h6 a:hover{
+    background-color: #121212;
+    color: #dfdfdf;
+    transition: .4s;
+}
+h6 a:hover span{
+    display: inline;
+    opacity: 1;
+    transition: .4s;
+    color:#ABA72D
+}
+.contact-desc {
+    line-height: 50px;
+}
+.contact-desc li{list-style: none;}
+.contact-form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 100%;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    justify-items: center;
+}
+form input{
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #dfdfdf;
+    transition: .4s;
+}
+form input:focus{
+    transition: .4s;
+    background-color: #121212;
+    color: #ABA72D;
+    -webkit-box-shadow:0 0 5px #121212;
+    -moz-box-shadow:0 0 5px #121212;
+    box-shadow:0 0 5px #121212;
+}
+form input:focus::placeholder{
+    color: #ABA72D;
+}
+form h6{
+    font-size: .9em;
+    margin-bottom: 10px;
+}
+form select{
+    outline: none;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #dfdfdf;
+}
+form select:focus{
+    transition: .4s;
+    background-color: #121212;
+    color: #ABA72D;
+    -webkit-box-shadow:0 0 5px #121212;
+    -moz-box-shadow:0 0 5px #121212;
+    box-shadow:0 0 5px #121212;
+}
+form textarea{
+    width: 100%;
+    resize: none;
+    outline: none;
+    border: none;
+    border-bottom: solid #dfdfdf;
+    transition: .4s;
+}
+form textarea:focus{
+    transition: .4s;
+    background-color: #121212;
+    color: #ABA72D;
+    -webkit-box-shadow:0 0 5px #121212;
+    -moz-box-shadow:0 0 5px #121212;
+    box-shadow:0 0 5px #121212;
+}
+form textarea:focus::placeholder{
+    color: #ABA72D;
+}
+form button{
+    cursor: pointer;
+    position: relative;
+    left: 40%;
+    width: 100px;
+    outline: none;
+    background-color: #dfdfdf;
+}
+form button:hover{
+    transition: .4s;
+    background-color: #121212;
+    color: #ABA72D;
+    -webkit-box-shadow:0 0 5px #121212;
+    -moz-box-shadow:0 0 5px #121212;
+    box-shadow:0 0 5px #121212;
+}
+footer{
+    position: relative;
+    width: 100%;
+    margin: 0vh auto;
+    /*background-color: darksalmon;*/
+}
+@media only screen and (max-width: 1000px){
+    .left-container{
+    width: 100%;
+    height: auto;
+    /*background-color: cornflowerblue;*/
+    }
+    .right-container{
+    width: 80%;
+    height: auto;
+    /*background-color: peachpuff;*/
+    }
+    .contact-desc{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    padding-top: 0;
+}
+}
+
+@media only screen and (max-width: 570px){
+    .center-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,2fr));
+    justify-items: center;
+}
+    .contact-form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 100%;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    justify-items: center;
+}
+    form input{
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #dfdfdf;
+    transition: .4s;
+}
+    form select{
+    outline: none;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+}
+    form textarea{
+    width: 100%;
+    resize: none;
+    outline: none;
+    border: none;
+    border-bottom: solid #dfdfdf;
+    transition: .4s;
+}
+    form button{
+    cursor: pointer;
+    position: relative;
+    left: 34%;
+    width: 100px;
+    outline: none;
+    background-color: #dfdfdf;
+}
+    .social-icons{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}    
+}
+
+@media only screen and (max-width: 375px){
+    .contact-form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 100%;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    justify-items: center;
+}
+    form input{
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #dfdfdf;
+    transition: .4s;
+}
+    form select{
+    outline: none;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+}
+    form textarea{
+    width: 100%;
+    resize: none;
+    outline: none;
+    border: none;
+    border-bottom: solid #dfdfdf;
+    transition: .4s;
+}
+    form button{
+    cursor: pointer;
+    position: relative;
+    left: 34%;
+    width: 100px;
+    outline: none;
+    background-color: #dfdfdf;
+}
+    .contact-desc{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 100%;
+}
+    .social-icons{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+} 
+    footer p{
+    text-align: center;
+    position: relative;
+    font-size: .7em;
+    margin-bottom: 0;
+}
+}
+/*
+@media only screen and (max-width: 485px){
+    .center-grid{
+    background-color: seagreen;
+    }
+    .grid-container{
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+    position: relative;
+    top: 5vh;
+}
+    .left-container{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    background-color: cornflowerblue;
+    margin-left: -2%;
+}
+    .right-container{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    height: 450px;
+    background-color: peachpuff;
+    margin-left: -2%;
+}
+}
+*/

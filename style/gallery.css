@@ -1,0 +1,194 @@
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Voltaire');
+@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');
+
+nav{
+    position: relative;
+}
+.about-banner{
+    width: 90%;
+    margin: 0 auto;
+    height: 60vh;
+    position: relative;
+}
+.overlay{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.45);
+}
+h2.heading{
+    color: #dfdfdf;
+    font-size: 3em;
+    margin: 0;
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);;
+    width: 100%;
+}
+.gallery-container{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    height: auto;
+}
+.coverup h4{
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Dancing Script', cursive;
+    padding: 20px;
+    margin-bottom: 0;
+}
+.coverup h4 span a{
+    color: #ABA72D;
+    text-decoration: none
+}
+.gallery-center{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,3fr));
+    justify-items: center;
+    grid-gap: 10px;
+    grid-row-gap: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 5px;
+}
+.gallery img{
+    width: 330px;
+    height: 300px;
+    filter: saturate(80%);
+    transition: .5s;
+    filter: brightness(100%);
+    
+    -webkit-transform:scale(1.0);
+    -ms-transform:scale(1.0);
+    -moz-transform:scale(1.0);
+    -o-transform:scale(1.0);
+    transform:scale(1.0);
+    -webkit-transition:all 400ms linear;
+    -moz-transition:all 400ms linear;
+    -ms-transition:all 400ms linear;
+    -o-transition:all 400ms linear;
+    transition:all 400ms linear;
+}
+.gallery img:hover{
+    cursor: pointer;
+    filter: saturate(110%);
+    filter: brightness(105%);
+    transition: .2s;
+    
+    -webkit-transform:scale(1.03);
+    -ms-transform:scale(1.03);
+    -moz-transform:scale(1.03);
+    -o-transform:scale(1.03);
+    transform:scale(1.03);
+    -webkit-transition:all 195ms linear;
+    -moz-transition:all 195ms linear;
+    -ms-transition:all 195ms linear;
+    -o-transition:all 195ms linear;
+    transition:all 195ms linear;
+
+    -webkit-box-shadow: 0px 11px 20px -4px rgba(0,0,0,0.26);
+    -moz-box-shadow: 0px 11px 20px -4px rgba(0,0,0,0.26);
+    box-shadow: 0px 11px 20px -4px rgba(0,0,0,0.26);  
+}
+.bottom-container{
+    height: auto;
+}
+.gallery img{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.social-icons{
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+}
+.social-icons h6{
+    font-family: 'Voltaire', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 10px;
+}
+.social-icons ul{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 0;
+    position: relative;
+}
+.social-icons ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+}
+.social-icons ul li a{
+    font-size: 1.5em;
+    color: #121212;
+}
+.social-icons ul li a:hover{color: #ABA72D;}
+
+.gallery-center a:nth-child(1) img{background-image: url(../images/Gallery/1.jpg)}
+.gallery-center a:nth-child(2) img{background-image: url(../images/Gallery/2.jpg)}
+.gallery-center a:nth-child(3) img{background-image: url(../images/Gallery/3.jpg)}
+.gallery-center a:nth-child(4) img{background-image: url(../images/Gallery/4.jpg)}
+.gallery-center a:nth-child(5) img{background-image: url(../images/Gallery/5.jpg)}
+.gallery-center a:nth-child(6) img{background-image: url(../images/Gallery/6.jpg)}
+
+footer{
+    position: relative;
+    width: 90%;
+    margin: 0vh auto;
+
+}
+@media only screen and (min-width: 640px) and (max-width: 670px){
+    .coverup h4{
+    text-align: center;
+    font-size: 1.3em;
+    font-family: 'Dancing Script', cursive;
+    padding: 10px;
+    margin-bottom: 0;
+}
+}
+@media only screen and (min-width: 400px) and (max-width: 415px){
+    .coverup h4{
+    text-align: center;
+    font-size: .85em;
+    font-family: 'Dancing Script', cursive;
+    padding: 10px;
+    margin-bottom: 0;
+}
+}
+@media only screen and (min-width: 360px) and (max-width: 375px){
+    .about-banner{
+    width: 90%;
+    margin: 0vh auto;
+    height: 60vh;
+    position: relative;
+}
+    .coverup h4{
+    text-align: center;
+    font-size: .75em;
+    font-family: 'Dancing Script', cursive;
+    padding: 10px;
+    margin-bottom: 0;
+}
+    footer p{
+            text-align: center;
+            position: relative;
+            font-size: .65em;
+            margin-bottom: 0;
+    }
+}
